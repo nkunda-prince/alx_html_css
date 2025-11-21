@@ -1,21 +1,24 @@
+/* Make <body> a flex container in column layout */
 body {
     display: flex;
     flex-direction: column;
 }
 
+/* Make <main> a flex container in row layout */
 main {
     display: flex;
     flex-direction: row;
-    flex: auto;
+    flex: auto; /* Allow main to stretch automatically */
 }
 
+/* Article takes 2/3 of the width */
 article {
     flex: 2;
-    overflow-y: auto;
+    overflow-y: auto; /* Scroll inside article */
 }
 
+/* Aside takes 1/3 of the width */
 aside {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* Scroll inside aside */
 }
-
