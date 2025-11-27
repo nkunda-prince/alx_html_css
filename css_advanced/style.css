@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://web.nyomora.com/img/Object.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+nav img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #C271FF;
+}
+
+/* Hero Section */
+header > section:first-of-type > div:first-child {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header > section:first-of-type > div:first-child span {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+header button:hover {
+    opacity: 0.9;
+}
+
+/* Learn from Pros Section */
+header > section:first-of-type > div:nth-child(2) {
+    padding: 60px 80px 0;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+header h2::first-line {
+    color: #C271FF;
+}
+
+.purple-text {
+    color: #C271FF;
+}
+
+header > section:first-of-type > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+header > section:first-of-type > div:nth-child(2) > div > div {
+    text-align: center;
+    max-width: 150px;
+}
+
+header > section:first-of-type > div:nth-child(2) > div > div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+header > section:first-of-type > div:nth-child(2) > div > div h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+header > section:first-of-type > div:nth-child(2) > div > div p {
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Quote Section */
+main > section:nth-child(1) {
+    background: #C271FF;
+    color: white;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+main > section:nth-child(1) > div:first-child img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main > section:nth-child(1) > div:nth-child(2) {
+    flex: 1;
+}
+
+main > section:nth-child(1) blockquote {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(1) h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+main > section:nth-child(1) p {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Tutorials Section */
+main > section:nth-child(2) {
+    padding: 80px;
+}
+
+main > section:nth-child(2) h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+main > section:nth-child(2) h2::after {
+    content: ' popular';
+    color: #C271FF;
+}
+
+main > section:nth-child(2) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(2) > div > div {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+main > section:nth-child(2) > div > div:hover {
+    transform: translateY(-5px);
+}
+
+main > section:nth-child(2) > div > div > img:first-child {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+}
+
+main > section:nth-child(2) > div > div > h3 {
+    padding: 20px 20px 10px;
+    font-size: 18px;
+}
+
+main > section:nth-child(2) > div > div > p:first-of-type {
+    padding: 0 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+main > section:nth-child(2) > div > div > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+main > section:nth-child(2) > div > div > div:nth-of-type(1) img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main > section:nth-child(2) > div > div > div:nth-of-type(1) h4 {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+main > section:nth-child(2) > div > div > div:nth-of-type(2) {
+    display: flex;
+    padding: 0 20px 10px;
+    gap: 5px;
+}
+
+main > section:nth-child(2) > div > div > div:nth-of-type(2) i {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+main > section:nth-child(2) > div > div > p:last-of-type {
+    padding: 0 20px 20px;
+    color: #C271FF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Membership Section */
+main > section:nth-child(3) {
+    background: #071629;
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+main > section:nth-child(3) h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+main > section:nth-child(3) h2::first-line {
+    color: #C271FF;
+}
+
+main > section:nth-child(3) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+main > section:nth-child(3) > div > div img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(3) > div > div h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(3) > div > div p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+main > section:nth-child(3) button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+main > section:nth-child(3) button:hover {
+    opacity: 0.9;
+}
+
+/* FAQ Section */
+main > section:nth-child(4) {
+    padding: 80px;
+}
+
+main > section:nth-child(4) h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+main > section:nth-child(4) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(4) > div > div > div:nth-child(odd) h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+main > section:nth-child(4) > div > div > div:nth-child(even) {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+main > section:nth-child(4) > div > div > div:nth-child(1) {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+    padding: 60px 80px;
+}
+
+footer > section > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer > section > div:first-child > div {
+    display: flex;
+    gap: 30px;
+}
+
+footer i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: #C271FF;
+}
+
+footer p {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    main > section:nth-child(1) {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 40px;
+    }
+
+    nav, header > section:first-of-type > div:nth-child(2), 
+    main > section:nth-child(2), main > section:nth-child(3), 
+    main > section:nth-child(4), footer {
+        padding: 60px 40px;
+    }
+}
